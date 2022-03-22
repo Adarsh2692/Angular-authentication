@@ -10,11 +10,12 @@ import { AppComponent } from "./app.component";
 import { AuthService } from "src/Services/auth.service";
 import { AuthGuard, HomeGuard } from "src/Guards/auth.guard";
 import { AboutComponent } from "src/Components/About/about.component";
+import { ValidationService } from "src/Services/validate.service";
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, LoginComponent, RegisterComponent, AboutComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
-  providers: [AuthService, AuthGuard, HomeGuard],
+  providers: [AuthService, ValidationService, AuthGuard, HomeGuard],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

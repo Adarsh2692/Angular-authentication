@@ -8,16 +8,16 @@
   margin-top: 15px;
 }
 
-.btn{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .shadow-container {
   border: solid;
   border-color: black;
-  box-shadow: 2px 2px 4px 0px rgb(0,0,0,0.5);
+  box-shadow: 2px 2px 4px 0px rgb(0, 0, 0, 0.5);
   border-radius: 10px;
   width: 400px;
   padding: 20px;
@@ -27,9 +27,24 @@
   align-items: center;
 }
 
-.whole{
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.whole {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.redbox {
+  border: solid;
+  border-color: red;
+}
+
+.hide {
+  display: none;
 }
