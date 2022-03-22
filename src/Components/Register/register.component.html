@@ -1,0 +1,25 @@
+<div class="whole">
+<div class="shadow-container">
+  <h4><dt>Sign Up Form</dt></h4>
+  <form #registerForm="ngForm" (ngSubmit)="register(registerForm.value)">
+    <div class="{{a}}">
+      <input ngModel type="text" class="{{b}}" name="firstName" placeholder="Enter first name"  required/>
+    </div>
+    <div class="{{a}}">
+      <input ngModel type="text" class="{{b}}" name="lastName" placeholder="Enter second name"  required/>
+    </div>
+    <div class="{{a}}">
+      <input ngModel type="email" class="{{b}}" name="email" placeholder="Enter email"  required/>
+    </div>
+    <div class="{{a}}">
+      <input ngModel type="number" class="{{b}}" name="contact" placeholder="Enter contact number"  required/>
+    </div>
+    <div class="{{a}}">
+      <input ngModel type="password" class="{{b}}" name="password" placeholder="Password" required/>
+    </div>
+    <div style="margin-top: 5px;"></div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <p>Already have an account?<a [routerLink]="['/login']">Login</a></p>
+</div>
+</div>
